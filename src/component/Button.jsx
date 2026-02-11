@@ -4,7 +4,9 @@ function Button(props) {
     const {value, result, secure, add, stat} = props
 
     function increase(){
-        add(()=> {return {...parallelVote, [value]: parallelVote[value] + 1}})
+        console.log(parallelVote);
+        
+        add((a)=> {return {...parallelVote, [value]: parallelVote[value] + 1}})
     }
 
 
@@ -16,7 +18,7 @@ function Button(props) {
         {/* {console.log(props.result)
         } */}
       <button onClick={()=>{props.result(true); increase()}}>{props.value}</button>
-    <div>{props.stat && props.scure}</div>
+    <div>{props.stat && props.scure[value]}</div>
     </div>
   )
 }

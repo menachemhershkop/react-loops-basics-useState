@@ -16,7 +16,7 @@ import Button from './Button';
         //  [a, setScure] = useState(()=>{
         //     parallelVote[optiens] +=1;
         //  })
-       return <Button value={optiens} result={setResult} scure={parallelVote[optiens]} ab={setVote} stat={showResults}></Button>
+       return <Button value={optiens} result={setResult} scure={parallelVote} ab={setVote} stat={showResults}></Button>
       })}
       {/* <div>{showResults && parallelVote.React}</div> */}
       {/* <button onClick={()=>{parallelVote.React+=1; setVote({Vue:5})}}></button> */}
